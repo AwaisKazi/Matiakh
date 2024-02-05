@@ -76,20 +76,21 @@
 							</section>
 							<section class="panel color4-alt">
 								<div class="intro color4">
-									<h2 class="major">Contact US</h2>
+									<h2 class="major">Contact Us</h2>
 									<p>Connect with Matiakh – your satisfaction is our priority! For inquiries, assistance, or just to say hello, reach out to our dedicated team at contact@matiakh.com or fill out the contact form on your right. We're here to make your Matiakh experience seamless and enjoyable.</p>
 								</div>
 								<div class="inner columns divided">
 									<div class="span-3-25">
-										<form method="post" action="#">
+										<form action="https://api.web3forms.com/submit" method="POST" action="#">
+											<input type="hidden" name="access_key" value="5c22db9a-301a-4dc4-8fc6-8725ac0e1fcf">
 											<div class="fields">
 												<div class="field half">
 													<label for="name">Name</label>
-													<input type="text" name="name" id="name" />
+													<input type="text" name="name" id="name" required/>
 												</div>
 												<div class="field half">
 													<label for="email">Email</label>
-													<input type="email" name="email" id="email" />
+													<input type="email" name="email" id="email" required/>
 												</div>
 												<div class="field">
 													<label for="message">Message</label>
@@ -108,6 +109,7 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="https://web3forms.com/client/script.js" async defer></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
